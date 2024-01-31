@@ -1,0 +1,13 @@
+{% block content %}
+  <div style="max-width: 1500px; margin: auto; background-image: url('https://as1.ftcdn.net/v2/jpg/02/73/33/26/1000_F_273332648_CPfHyIW82YrVLk0cltj5yK9rueTCvhqy.jpg'); background-size: cover; padding: 20px; height: 600px;">
+    <h2 style="text-align: center; color: rgb(0, 0, 0);">Login</h2>
+    <form method="post" action="{% url 'login' %}">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <button type="submit">Login</button>
+    </form>
+    <p style="text-align:     center; color: rgb(0, 0, 0); margin-top: 10px;">If you're a new user, please
+      <a href="{% url 'create_account' %}">create a new account</a>.
+    </p>
+  </div>
+{% endblock %}

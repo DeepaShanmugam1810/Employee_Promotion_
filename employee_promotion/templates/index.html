@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        td {
+            font-size: 17px;
+        }
+
+        body {
+            background-color: black;
+        
+            background-size: cover;
+            background-repeat: no-repeat;
+            text-align: center
+        }
+
+        .main {
+            margin: 10 auto;
+            width: 100%;
+            background-color: white;
+            background-image: url(https://miro.medium.com/v2/resize:fit:963/0*Gj3Q2Cyaqsp-Q1kw.jpg);
+            border-radius:100 px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            margin-top: 5px;  /* Adjust this value to vertically center the form */
+            text-align: center
+        }
+
+        .main:hover {
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+            text-align: center
+        }
+
+        h1 {
+            font-family: Times New Roman;
+            margin: 20px 0;
+            color: #F6465B;
+            font-size: 30px;
+            font-weight: bold;
+            animation-delay: 3.5s;
+            text-align: center
+        }
+
+        input[type=submit] {
+            background-color: #FFA500;
+            border: 2px;
+            color: white;
+            font-size: 15px;
+            font-weight: bold;
+            padding: 10px 16px;
+            cursor: pointer;
+            margin-top: 15px;
+            border-radius: 10px;
+            text-align: center
+        }
+
+        input {
+            padding: 5% 0;
+            margin: 5px 0;
+            text-align: center
+        }
+
+        p {
+            color: #ffffff;
+            text-align: center
+        }
+
+        .row em {
+            color: #BF0A30;
+        }
+
+        .gfg {
+            color: rgb(51, 0, 128);
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <p><em>WELCOME TO THE PREDICTION PAGE</em></p>
+    <div class="main">
+        <h1 class="gfg">                         Employee Promotion Prediction</h1>
+        <br />
+        <form action="result" method="GET">
+            <table>
+                <tr>
+                    <td align="right"><strong>Department :</strong> </td>
+                    <td align="left"><input type="text" name="n1" value=" "></td>
+                </tr>
+                <tr>
+                    <td align="right"><strong>Region :</strong> </td>
+                    <td align="left"><input type="text" name="n2" value=" "></td>
+                </tr>
+                <tr>
+                    <td align="right"><strong>Education :</strong> </td>
+                    <td align="left"><input type="text" name="n3" value=" "></td>
+                </tr>
+                <tr>
+                    <td align="right"><strong>Gender :</strong> </td>
+                    <td align="left"><input type="text" name="n4" value=" "></td>
+                </tr>
+                <tr>
+                    <td align="right"><strong>Recruitment channel :</strong> </td>
+                    <td align="left"><input type="text" name="n5" value=" "></td>
+                </tr>
+                <tr>
+                    <td align="right"><strong>No/of trainings :</strong> </td>
+                    <td align="left"><input type="text" name="n6" value=" "></td>
+                </tr>
+                <tr>
+                    <td align="right"><strong>Age :</strong> </td>
+                    <td align="left"><input type="text" name="n7" value=" "></td>
+                </tr>
+                <tr>
+                    <td align="right"><strong>Previous year rating :</strong> </td>
+                    <td align="left"><input type="text" name="n8" value=" "></td>
+                </tr>
+                <tr>
+                    <td align="right"><strong>Length of service :</strong> </td>
+                    <td align="left"><input type="text" name="n9" value=" "></td>
+                </tr>
+                <tr>
+                    <td align="right"><strong>KPIs met :</strong> </td>
+                    <td align="left"><input type="text" name="n10" value=" "></td>
+                </tr>
+                <tr>
+                    <td align="right"><strong>Awards won :</strong> </td>
+                    <td align="left"><input type="text" name="n11" value=" "></td>
+                </tr>
+                <tr>
+                    <td align="right"><strong>Average training score :</strong> </td>
+                    <td align="left"><input type="text" name="n12" value=" "></td>
+                </tr>
+            </table>
+            <input type="submit" value="PREDICT">
+        </form>
+        <div class="row">
+            <h2><em>{{result2}}</em></h2>
+        </div>
+    </div>
+</body>
+
+</html>
